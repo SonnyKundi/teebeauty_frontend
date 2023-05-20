@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+.artist-container {
+    display: flex;
+    /* Use Flexbox */
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    flex-shrink: 0;
+    /* Prevent items from shrinking */
+    padding: 0 10px;
+    /* Add spacing between items */
+}
