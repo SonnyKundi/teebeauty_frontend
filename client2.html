@@ -20,7 +20,7 @@
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link active">Home</a></li>
                     <li><a href="index.html" class="nav-link">About Us</a></li>
-                    <li><a href="services.html" class="nav-link">List Services</a></li>
+                    <li><a href="services.html" class="nav-link">Portfolio</a></li>
                     <li><a href="index.html" class="nav-link">Blog</a></li>
                     <li><a href="index.html" class="nav-link">Contact Us</a></li>
 
@@ -39,11 +39,9 @@
         <div class="hmmuu">
             <div class="mdoni">
                 <div class="sush">
-
                     <!--FORMS STARTS-->
                     <div>
                         <form action="#">
-
                             <!--SIDE FORM-->
                             <div class="form">
                                 <div>
@@ -60,9 +58,7 @@
                                                     </div>
                                                     <img src="/images/chevron-down.svg" height="6" width="10">
                                                 </div>
-                                                <select id="client-category-selection">
-                                                    <option disabled value>Choose a category</option>                                                        
-                                                    </select>
+                                                <select id="client-category-selection"></select>
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +73,7 @@
                                                 <div class="contenttt">
                                                     <input type="text" placeholder="Filter by town"> 
                                                    <select id="client-cities">
-                                                    <option disabled value>Select a town</option>                                                 
+                                                    <option disabled value>Select a town</option>
                                                 </select>
                                                 </div>
                                                 <div class="hihi">
@@ -94,19 +90,19 @@
                                     </div>
                                     <h3>Rating</h3>
                                     <label for="r5">
-                                            <input name="rating" type="radio" id="r5" value="r5">5
+                                            <input name="rating" type="radio" id="r5" value="5">5
                                         </label>
                                     <label for="r4">
-                                            <input name="rating" type="radio" id="r4" value="r4">4+
+                                            <input name="rating" type="radio" id="r4" value="4">4+
                                         </label>
                                     <label for="r3">
-                                            <input name="rating" type="radio" id="r3" value="r3">3+
+                                            <input name="rating" type="radio" id="r3" value="3">3+
                                         </label>
                                     <label for="r2">
-                                            <input name="rating" type="radio" id="r2" value="r2">2+
+                                            <input name="rating" type="radio" id="r2" value="2">2+
                                         </label>
                                     <label for="r1">
-                                            <input name="rating" type="radio" id="r1" value="r1">1+
+                                            <input name="rating" type="radio" id="r1" value="1">1+
                                         </label>
                                     <div class="space">
                                     </div>
@@ -118,15 +114,14 @@
                                             <span>House calls</span>
                                         </label>
                                     <div class="apply"></div>
-                                    <button type="submit" class="button">Apply filters</button>
+                                    <button id="filter-apply-button" type="submit" class="button">Apply filters</button>
                                 </div>
                             </div>
                         </form>
                     </div>
-
                     <!-- PORTFOLIO SECTION STARTS -->
                     <div class="glbv">
-                        <div class="lffr">
+                        <!-- <div class="lffr">
                             <div class="vir">
                                 <div class="portfolio">
                                     <div>
@@ -141,17 +136,14 @@
                                         <option value="recency">Sort by: Latest</option>
                                     </select>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!--Portifolio starts-->
                         <div class="artist1" id="artist-portfolios">
-
                             <!--Artist 1-->
-                            <div class="portfolio1">
+                            <!-- <div class="portfolio1">
                                 <div class="image1">
-                                    
-                                    <a href="artist1.html" class="inline-block-display"><img src="./images/artist1.jpg" height="20" width="20">
-                                </a>
+                                    <a href="artist1.html" class="inline-block-display"><img src="./images/artist1.jpg" height="20" width="20"></a>
                                 </div>
                                 <div class="info">
                                     <div class="services">
@@ -169,13 +161,11 @@
                                                 <img src="./images/artist1.jpg" height="20" width="20">
                                             </div>
                                             <div>
-                                                <h4>by<span>Wanjiku Maina</span>
-                                                </h4>
+                                                <h4>by<span>Wanjiku Maina</span></h4>
                                                 <div class="star">
                                                     <img src="./images/star.svg" height="18" width="18">
                                                     <span>4.93</span>
-                                                    <span>(153)
-                                                </span>
+                                                    <span>(153)</span>
                                                 </div>
                                                 <span>Westlands, Nairobi</span>
                                             </div>
@@ -188,7 +178,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div> 
                 </div> 
@@ -249,7 +239,5 @@
   ></script>
   <script src="./javascript/client2.js"></script>
   <script type="module" src="./javascript/apis/client.js"></script>
-
 </body>
-
 </html>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;800&family=Pacifico&display=swap');
+:root {
+    --header-height: 5rem;
+    --main-color: #f7e6df;
+    --first-color: #75492b;
+    --second-color: #dfd6a7;
+    --white-color: #fff;
+    --black-color: #151515;
+    --font-cursive: 'Great Vibes', cursive;
+    --font-body: 'Montserrat', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+    --border: .1rem solid;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+select,
+textarea {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 1.2rem;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    font-size: 1.05rem;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    text-transform: none;
+    background: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+select,
+input{
+    color: var(--black-color);
+    text-transform: none;
+    top: 0px;
+    left: 0px;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.container-full{
+    background-color: none;
+    height: auto;
+    width: 100%;
+    max-height: 100vh;
+    max-width: 100%;
+    padding: 0 40px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.form-component{
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-action {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.search-form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+.fa-search {
+    margin-right: 8px;
+    color: #999;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.btn.search {
+    border: 1px solid #e0e0e0;
+    height: 3rem;
+    display: flex;
+    border-radius: 0 0.5rem 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.btn.search i {
+    left: unset;
+    color: white;
+}
+
+.table-display {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0.5rem;
+    overflow: hidden
+}
+
+.table-display.borders thead th {
+    border-bottom: 1px solid #0000001a;
+    border-right: 1px solid var(--primary);
+    border-left: 1px solid var(--primary);
+    text-align: left;
+}
+
+.table-display.borders tbody tr td {
+    border-bottom: 1px solid #0000001a;
+    padding: 1rem;
+}
+
+.table-display.borders tbody tr td:first-child {
+    border-bottom: 1px solid #0000001a;
+    border-left: 1px solid #0000001a;
+}
+
+.table-display.borders tbody tr td:last-child {
+    border-right: 1px solid #0000001a;
+}
+
+.multi-table-buttons{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.multi-table-buttons .btnn{
+    margin-top: 1rem;
+    display: inline-block;
+    width: auto;
+    background-color: var(--main-color);
+    color: var(--black-color);
+    font-size: 1.0rem;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    border-radius: 3px;
+}
+
+.multi-table-buttons .btnn:hover{
+    background-color: pink;
+}
+
+.search-container {
+    top: calc(2.5rem + 0.5rem);
+    width: 100%;
+    z-index: 50;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 0 0.3rem #0000004d;
+    background-color: white;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    max-height: 200px;
+    display: none;
+}
+
+.search-result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result li{
+    margin-bottom: 7px;
+}
+
+.search-result li:hover{
+    background-color: pink;
+    transition: all 50ms ease-in-out;
+}
+
+button:disabled{
+    background-color: gray;
+    pointer-events: none;
+}
+
+.separate-top{
+    padding-top: 25px;
+}

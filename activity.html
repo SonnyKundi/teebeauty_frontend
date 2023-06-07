@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERSUN BEAUTY USER ACTIVITY</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" />
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="client2.html" class="nav-link">Find Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li hidden id="activity-user"></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-full full-height">
+        <div hidden id="payments-search" class="search-form">
+            <form action="" method="post" class="form-action">
+                <div class="search-form-group">
+                  <i class="fa fa-search"></i>
+                  <input type="text" placeholder="Enter payment value to search" id="bookings-table-search-input">
+                </div>
+            </form>
+        </div>
+        <div class="table-holder separate-top">
+            <table class="table-display borders">
+                <thead>
+                    <tr>
+                        <th>Serial No.</th>
+                        <th>Service.</th>
+                        <th hidden id="provider-field">Provider.</th>
+                        <th>Email.</th>
+                        <th>Phone Number.</th>
+                        <th>Whatsapp Number.</th>
+                        <th>Record Date.</th>
+                    </tr>
+                </thead>
+                <tbody id="bookings-table-data"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/3df4968641.js" crossorigin="anonymous"></script>
+    <script type="module" src="./javascript/activity.js"></script>
+</body>
+</html>

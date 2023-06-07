@@ -38,6 +38,43 @@ body {
     overflow-x: hidden;
 }
 
+select,
+textarea {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 1.2rem;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    text-transform: none;
+    background: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
 .header {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -144,6 +181,19 @@ body {
     background-color: var(--first-color);
 }
 
+.input {
+    top: 0px;
+    left: 0px;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
 
 /* SECTION STARTS */
 
@@ -224,6 +274,11 @@ svg {
     width: 100%;
 }
 
+.vertical-display{
+    display: flex;
+    flex-direction: column;
+}
+
 .profile-picture {
     display: flex;
     flex-direction: column;
@@ -293,6 +348,16 @@ svg {
     height: 14px;
 }
 
+.star-rating img{
+    width: 20px;
+    padding-left: 5px;
+}
+
+.star-rating img:hover {
+    width: 30px;
+    padding-left: 7px;
+}
+
 .rate-number span:last-of-type {
     margin-left: 0.5rem;
     color: #9CA3AF;
@@ -300,7 +365,7 @@ svg {
 
 .location {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     --webkit-box-align: center;
     align-items: center;
 }
@@ -518,6 +583,62 @@ div {
     font-weight: 500;
     color: #6B7280;
     font-size: 14px;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup.show{
+    opacity: 1;
+    display: block;
+    pointer-events: all;
+    background-color: transparent;
+}
+
+.hide-popup {
+    display: none;
+}
+
+.ratings-selector{
+    height: 40px;
+    width: 130px;
+    border-radius: 3px;
+    background-color: var(--main-color);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close i{
+    font-size: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .contact span {

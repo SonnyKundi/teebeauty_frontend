@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERSUN BEAUTY PROVIDER REPORTS</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" />
+            </div>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="client2.html" class="nav-link">Find Services</a></li>
+                    <li><a href="payments.html" class="nav-link">Payments</a></li>
+                    <li><a href="providers.html" class="nav-link">Providers</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="btn search" >
+        <i class="fa fa-plus"></i>
+      </div> -->
+    <section class="container-full" hidden>
+        <div>
+            <form>
+                <div class="form-component">
+                    <label>
+                        Username
+                    </label>
+                    <input class="input" placeholder="Enter the username" id="username-input">
+                </div>
+                <div class="form-component">
+                    <label>
+                        First Name
+                    </label>
+                    <input class="input" placeholder="Enter the first name" id="first-name-input">
+                </div>
+                <div class="form-component">
+                    <label>
+                        Last Name
+                    </label>
+                    <input class="input" placeholder="Enter the last name" id="last-name-input">
+                </div>
+                <div class="form-component">
+                    <label>
+                        Other Names
+                    </label>
+                    <input class="input" placeholder="Enter the other names" id="other-names-input">
+                </div>
+                <div class="form-component">
+                    <label>
+                        Email
+                    </label>
+                    <input class="input" type="email" placeholder="Enter the email" id="email-input">
+                </div>
+                <div class="form-component">
+                    <label>
+                        Phone Number
+                    </label>
+                    <input type="text" class="input" placeholder="Enter the phone number" id="phone-number-input">
+                </div>
+                <div class="form-component centered">
+                    <button class="btn" id="provider-submission">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="container-full full-height">
+        <div id="payments-search" class="search-form">
+            <form action="" method="post" class="form-action">
+                <div class="search-form-group">
+                  <i class="fa fa-search"></i>
+                  <input type="text" placeholder="Enter value to search" id="provider-table-search-input">
+                </div>
+            </form>
+        </div>
+        <div class="table-holder separate-top">
+            <table class="table-display borders">
+                <thead>
+                    <tr>
+                        <th>Serial No.</th>
+                        <th>Name.</th>
+                        <th>Email.</th>
+                        <th>Phone Number.</th>
+                        <th>Whatsapp Number.</th>
+                        <th>Status.</th>
+                        <th>Amount Due.</th>
+                        <th>Actions.</th>
+                    </tr>
+                </thead>
+                <tbody id="providers-table-data"></tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+<script src="https://kit.fontawesome.com/3df4968641.js" crossorigin="anonymous"></script>
+<script src="./javascript/providers.js"></script>
+</html>

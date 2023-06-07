@@ -5,7 +5,6 @@ toggle.onclick = function(){
     nav.classList.toggle('show-nav')
 }
 
-
 //remove navbar
 
 const navLink = document.querySelectorAll('.nav-link')
